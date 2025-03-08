@@ -7,8 +7,9 @@ import java.util.List;
 
 public interface BoockingRepostory {
     void saveBoocking(Booking booking) throws IOException;
-    List<Booking> getAllBoocking() throws IOException;
+
     void updateBoocking(Booking booking) throws IOException;
     void deleteBoocking(String booking_id) throws IOException;
     Booking findBoocking(String booking_id) throws IOException;
+    List<Booking> getAllBoocking() throws IOException;
 }
