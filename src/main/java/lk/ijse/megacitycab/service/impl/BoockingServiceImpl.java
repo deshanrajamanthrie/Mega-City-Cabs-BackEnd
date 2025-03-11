@@ -28,5 +28,13 @@ public class BoockingServiceImpl implements BoockingService {
         boockingRepostory.updateBoocking(map.toBoocking(boocking));
     }
 
+    @Override
+    public void deleteBoocking(String booking_id) throws IOException {
+        boockingRepostory.deleteBoocking(booking_id);
+    }
 
+    @Override
+    public BoockingDTO findBoocking(String booking_id) throws IOException {
+        return map.toBoockingDto(boockingRepostory.findBoocking(booking_id));
+    }
 }
