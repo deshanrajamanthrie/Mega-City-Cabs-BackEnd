@@ -8,7 +8,7 @@
     </appender>
 
     <appender name="File" class="ch.qos.logback.core.FileAppender">
-        <file>E:\Personal Projects\Mega-City-Cab\logs\app.log</file>
+        <file>D:\ICBT\FirstSemester\Mega-City-Cabs-master\logs\app.log</file>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} -%kvp- %msg%n%n</pattern>
         </encoder>
