@@ -13,6 +13,6 @@ public class CustomerDTO {
     private String registration_number;
     private String name;
     private String phone;
-   // private String address;
+    private String address;
     private String email;
 }
