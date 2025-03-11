@@ -50,6 +50,17 @@ public class BoockingController extends HttpServlet {
             logger.error(e.getMessage());
         }
     }
+    @Override
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try{
+            BoockingDTO booking = jsonb.fromJson(req.getReader(), BoockingDTO.class);
+            boockingService.updateBoocking(booking);
+            resp.setStatus(HttpServletResponse.SC_OK);
+        }catch (Exception e){
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            logger.error(e.getMessage());
+        }
+    }
 
 
 }
