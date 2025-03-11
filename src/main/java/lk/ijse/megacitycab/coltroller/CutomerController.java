@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(urlPatterns = "/customers")
+@WebServlet(urlPatterns = "/customer")
 public class CutomerController extends HttpServlet {
 
     private Jsonb jsonb = JsonbBuilder.create();
