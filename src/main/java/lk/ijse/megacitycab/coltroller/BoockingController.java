@@ -23,7 +23,7 @@ public class BoockingController extends HttpServlet {
 
     private static final Logger logger = LoggerFactory.getLogger(CutomerController.class);
     @Override
- /*   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         try(PrintWriter printWriter = resp.getWriter()){
             String booking_id = req.getParameter("booking_id");
@@ -37,7 +37,7 @@ public class BoockingController extends HttpServlet {
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             logger.error(e.getMessage());
         }
-    }*/
+    }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
