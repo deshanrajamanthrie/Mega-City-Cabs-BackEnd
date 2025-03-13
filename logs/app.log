@@ -414,3 +414,31 @@
 
 10:22:21.929 [http-nio-8080-exec-8] WARN  org.hibernate.orm.deprecation -- HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
 
+12:10:49.280 [http-nio-8080-exec-8] WARN  o.hibernate.orm.connections.pooling -- HHH10001002: Using built-in connection pool (not intended for production use)
+
+12:10:49.963 [http-nio-8080-exec-8] WARN  org.hibernate.orm.deprecation -- HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+
+12:45:53.044 [http-nio-8080-exec-4] WARN  o.hibernate.orm.connections.pooling -- HHH10001002: Using built-in connection pool (not intended for production use)
+
+12:45:53.714 [http-nio-8080-exec-4] WARN  org.hibernate.orm.deprecation -- HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+
+12:49:53.986 [http-nio-8080-exec-5] WARN  o.hibernate.orm.connections.pooling -- HHH10001002: Using built-in connection pool (not intended for production use)
+
+12:49:54.679 [http-nio-8080-exec-5] WARN  org.hibernate.orm.deprecation -- HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+
+12:59:55.374 [http-nio-8080-exec-7] WARN  o.hibernate.orm.connections.pooling -- HHH10001002: Using built-in connection pool (not intended for production use)
+
+12:59:56.186 [http-nio-8080-exec-7] WARN  org.hibernate.orm.deprecation -- HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+
+16:31:07.763 [http-nio-8080-exec-1] ERROR l.i.m.coltroller.CutomerController -- Internal error: Invalid token=STRING at (line no=4, column no=11, offset=61). Expected tokens are: [COMMA]
+
+16:50:46.946 [http-nio-8080-exec-5] WARN  o.hibernate.orm.connections.pooling -- HHH10001002: Using built-in connection pool (not intended for production use)
+
+16:50:47.918 [http-nio-8080-exec-5] WARN  org.hibernate.orm.deprecation -- HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+
+16:50:49.930 [http-nio-8080-exec-8] WARN  o.hibernate.orm.connections.pooling -- HHH10001002: Using built-in connection pool (not intended for production use)
+
+16:50:50.011 [http-nio-8080-exec-8] WARN  org.hibernate.orm.deprecation -- HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+
+17:04:17.002 [http-nio-8080-exec-2] ERROR l.i.m.coltroller.CutomerController -- Internal error: No enum constant lk.ijse.megacitycab.util.enums.FuelType.
+

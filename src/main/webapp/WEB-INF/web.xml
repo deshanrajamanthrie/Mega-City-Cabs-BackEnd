@@ -6,7 +6,7 @@
 
     <context-param>
         <param-name>origin</param-name>
-        <param-value>http://localhost:4200/</param-value>
+        <param-value>http://localhost:4200</param-value>
     </context-param>
 
 </web-app>

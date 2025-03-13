@@ -14,7 +14,7 @@ public class CORSFilter extends HttpFilter {
 
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
-        String origin = req.getHeader("origin");
+        String origin = req.getHeader("Origin");
         String configedOrigin = getServletContext().getInitParameter("origin");
 
         if (origin != null && (configedOrigin.equals("*") || origin.equals(configedOrigin))) {
@@ -24,7 +24,11 @@ public class CORSFilter extends HttpFilter {
             res.setHeader("Access-Control-Expose-Headers", "Content-Type");
             res.setHeader("Access-Control-Allow-Credentials", "true");
         }
-
+        // Handle preflight request
+        /*if ("OPTIONS".equalsIgnoreCase(req.getMethod())) {
+            res.setStatus(HttpServletResponse.SC_OK);
+            return;
+        }*/
         chain.doFilter(req, res);
     }
 }
