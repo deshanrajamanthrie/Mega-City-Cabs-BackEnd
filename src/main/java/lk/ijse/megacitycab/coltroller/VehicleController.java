@@ -19,7 +19,7 @@ import java.io.Writer;
 @WebServlet(urlPatterns = "/vehicle")
 public class VehicleController extends HttpServlet {
 
-  //  private Jsonb jsonb = JsonbBuilder.create();
+    private Jsonb jsonb = JsonbBuilder.create();
     private VehicleService vehicleService = new VehicleServiceImpl();
 
     private static final Logger logger = LoggerFactory.getLogger(CutomerController.class);
@@ -34,6 +34,7 @@ public class VehicleController extends HttpServlet {
                 writer.write(jsonb.toJson(vehicleService.findVehicle(vehicle_id)));
             }
 
+            /**/
         }catch (Exception e){
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             logger.error(e.getMessage());
