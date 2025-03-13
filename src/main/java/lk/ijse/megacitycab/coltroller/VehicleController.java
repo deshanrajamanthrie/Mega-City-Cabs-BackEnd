@@ -19,7 +19,7 @@ import java.io.Writer;
 @WebServlet(urlPatterns = "/vehicle")
 public class VehicleController extends HttpServlet {
 
-    private Jsonb jsonb = JsonbBuilder.create();
+  //  private Jsonb jsonb = JsonbBuilder.create();
     private VehicleService vehicleService = new VehicleServiceImpl();
 
     private static final Logger logger = LoggerFactory.getLogger(CutomerController.class);
